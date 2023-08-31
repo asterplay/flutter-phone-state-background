@@ -100,9 +100,9 @@ class PhoneStateBackgroundPlugin : FlutterPlugin, MethodCallHandler, ActivityAwa
   private fun doCheckPermission(): Boolean {
     if (currentActivity != null && currentActivity!!.applicationContext != null) {
       val permPhoneState = ContextCompat.checkSelfPermission(currentActivity!!, Manifest.permission.READ_PHONE_STATE)
-      val permReadCallLog = ContextCompat.checkSelfPermission(currentActivity!!, Manifest.permission.READ_CALL_LOG)
+//      val permReadCallLog = ContextCompat.checkSelfPermission(currentActivity!!, Manifest.permission.READ_CALL_LOG)
       val grantedCode = PackageManager.PERMISSION_GRANTED
-      return permPhoneState == grantedCode && permReadCallLog == grantedCode
+      return permPhoneState == grantedCode
     }
     return false
   }
