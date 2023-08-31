@@ -115,7 +115,7 @@ class PhoneStateBackgroundPlugin : FlutterPlugin, MethodCallHandler, ActivityAwa
 
     val permissions = arrayOf(
       Manifest.permission.READ_PHONE_STATE,
-      Manifest.permission.READ_CALL_LOG
+//      Manifest.permission.READ_CALL_LOG
     )
     val permissionsToAsk = arrayListOf<String>()
 
